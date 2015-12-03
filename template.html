@@ -146,13 +146,12 @@
     .thumb img {
       width: 100%;
       vertical-align: bottom;
+      max-width: 200px;
     }
     .text {
-      width: 60%;
       padding-right: 20px;
     }
     .image {
-      width: 40%;
       padding: 0 20px;
     }
     .cta {
@@ -249,12 +248,16 @@
                             <table border="0" cellpadding="0" cellspacing="0" class="article" width="100%" height="100%">
                                 <tr height="20px;"></tr><!-- spacer -->
                                 <tr>
-                                  <td align="left" class="image">
+                                  {% if article.image %}
+                                  <td align="left" class="image" width="40%">
                                     <a class="thumb" href="{{ article.link }}">
                                       <img alt="article.link" src="img/{{ article.image }}">
                                     </a>
                                   </td>
-                                  <td align="left" class="text" valign="top" height="100%">
+                                  <td align="left" class="text" valign="top" height="100%" width="60%">
+                                  {% else %}
+                                  <td align="left" style="padding-left: 20px;" class="text" valign="top" height="100%" width="100%">
+                                  {% endif %}
                                       <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
                                         <tr valign="top">
                                           <td>
@@ -291,12 +294,12 @@
                             <table border="0" cellpadding="0" cellspacing="0" class="article talk" width="100%" height="100%">
                                 <tr height="30px;"></tr><!-- spacer -->
                                 <tr>
-                                  <td align="center" class="image">
+                                  <td align="center" class="image" width="40%">
                                     <a class="thumb" href="https://resin.io/blog/git-push-resin-design-the-new-face-of-resin-io/">
                                       <img alt="resin-talk" src="img/icon.png">
                                     </a>
                                   </td>
-                                  <td align="left" class="text" valign="top" height="100%">
+                                  <td align="left" class="text" valign="top" height="100%" width="60%">
                                       <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
                                         <tr valign="top">
                                           <td>
