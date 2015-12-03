@@ -1,0 +1,25 @@
+{
+	"letterTitle": "Merry Christmas",
+	"articles": [{
+		"title": "RPI ZERO Support!",
+		"link": "https://resin.io/blog/git-push-resin-design-the-new-face-of-resin-io/",
+		"type": "feature",
+    "tweet": "%23RPiZero support confirmed! You can push containers to the @Raspberry_Pi ZERO with @resin_io!",
+		"image": "video.png",
+		"CTAtext": "Try It"
+	}, {
+		"title": "Intale uses resin.io to unify the retail market",
+		"link": "https://resin.io/blog/intale-the-end-to-end-solution-for-the-retail-market/",
+		"type": "use case",
+    "tweet": "[video] @intale uses @resin_io to provide an end-to-end solution for the retail market http://buff.ly/1QkbgmH %23IoT",
+		"image": "video.png",
+		"CTAtext": "Read More"
+	}],
+	"additionalLinks": [{
+		"title": "How to create a custom logging system for longer log retention",
+		"link": "https://resin.io/blog/how-to-create-a-custom-logging-system-for-longer-log-retention/"
+	}, {
+		"title": "Running the LDA algorithm on a Raspberry Pi: The resin.io way",
+		"link": "https://resin.io/blog/running-the-lda-algorithm-on-raspberry-pi-the-resin-io-way/s"
+	}]
+}
