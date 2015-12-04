@@ -17,13 +17,7 @@ gulp.task('compile', function() {
     .pipe(gulp.dest('build'));
 });
 
-gulp.task('copy',['compile'], function() {
+gulp.task('default',['compile'], function() {
    gulp.src('./img/*')
    .pipe(gulp.dest('./build/img'));
-});
-
-gulp.task('default',['compile', 'copy'], function () {
-    return gulp.src('build/*')
-        .pipe(zip('template.zip'))
-        .pipe(gulp.dest('build'));
 });

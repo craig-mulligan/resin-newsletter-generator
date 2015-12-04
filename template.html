@@ -11,15 +11,6 @@
 		#outlook a{
 			padding:0;
 		}
-		.ReadMsgBody{
-			width:100%;
-		}
-		.ExternalClass{
-			width:100%;
-		}
-		.ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div{
-			line-height:100%;
-		}
 		body,table,td,a{
 			-webkit-text-size-adjust:100%;
 			-ms-text-size-adjust:100%;
@@ -40,14 +31,15 @@
 			border-collapse:collapse !important;
 		}
 		body{
-			margin:0 auto;
 			padding:0;
-      max-width: 630px;
-      margin:0 auto;
 			font-family:'Open Sans',Verdana, 'Trebuchet MS', sans-serif;
 			color:#545452;
 			background-color:#eaebee;
 		}
+    .wrapper {
+      max-width: 600px;
+      margin:0 auto;
+    }
 		h1{
 			font-size:24px;
 			line-height:39px;
@@ -83,11 +75,10 @@
       display: inline-block;
       width: 30px;
       vertical-align: text-bottom;
-      position: relative;
-      top: 3px;
     }
     .letter-title {
       display: inline-block;
+      margin-top: 0px;
     }
 		.article{
 			background-color:#fff;
@@ -114,6 +105,7 @@
     }
     .talk {
       background: #3d3d3d;
+      padding: 30px 0px;
     }
     .talk a {
       color: #fff;
@@ -121,11 +113,9 @@
     .talk h2 {
       font-size: 18px;
       font-weight: normal;
-      padding-right: 10px;
     }
     .talk .thumb img {
-      padding: 10px 0;
-      max-width: 89px;
+      max-width: 90px;
     }
     .talk .cta {
       font-size: 22px;
@@ -142,14 +132,11 @@
 		}
     .thumb {
       display: inline-block;
+      text-align: center;
     }
     .thumb img {
       width: 100%;
       vertical-align: bottom;
-      max-width: 200px;
-    }
-    .text {
-      padding-right: 20px;
     }
     .image {
       padding: 0 20px;
@@ -189,12 +176,49 @@
 		.btn img{
 			vertical-align:sub;
 		}
+    .padding-left {
+      padding-left: 10px;
+    }
+    .padding-right {
+      padding-right: 10px;
+    }
+    .two-column .column {
+        width: 100%;
+        max-width: 300px;
+        vertical-align: middle;
+        padding: 10px;
+        display: inline-block;
+    }
+    .two-column .column-image {
+        max-width: 180px;
+        padding-right: 0px;
+    }
+    .two-column .column-text {
+        max-width: 380px;
+    }
+    .column-image .contents {
+      margin: 0 auto;
+    }
+    @media (min-width: 630px) {
+      .two-column .column {
+        height: 100%;
+      }
+    }
+    @media (max-width: 630px) {
+      .two-column .column {
+        /*max-width: none;*/
+        /*display: inline-table;*/
+      }
+      .talk .contents {
+        text-align: center;
+      }
+    }
 </style>
 </head>
 
 <body>
     <!-- HEADER -->
-
+<div class="wrapper">
     <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
         <tr>
             <td align="center" width="100%">
@@ -205,26 +229,27 @@
 
                                 <table border="0" cellpadding="0" cellspacing="0" class="info" width="100%" style="padding:5%">
                                     <tr>
-                                        <td align="left" width="400">
+                                        <td align="left" class="padding-left" width="400">
                                             <p>Everything resin&#173;.io</p>
                                         </td>
 
 
-                                        <td align="right" width="400">
+                                        <td align="right" class="padding-right" width="400">
                                             <a href="*|ARCHIVE|*">View in
                                             Browser</a>
                                         </td>
                                     </tr>
-                                </table><!-- LOGO/PREHEADER TEXT -->
+                                </table>
+                                <!-- LOGO/PREHEADER TEXT -->
                                 <!-- LOGO + TITLES  -->
 
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
                                     <tr>
-                                        <td width="80%" align="left">
+                                        <td width="80%" align="left" class="padding-left">
                                             <img class="logo" src="img/logo.png">
                                             <h1 class="letter-title">{{ letterTitle }}</h1>
                                         </td>
-                                        <td width="20%" align="right">December 2015</td>
+                                        <td width="20%" align="right" class="padding-right">December 2015</td>
                                     </tr>
                                 </table><!-- LOGO + TITLES  -->
                             </td>
@@ -239,89 +264,132 @@
             <td align="center" class="section-padding" style="padding: 50 15px 70px 15px;">
                 <!-- CONTAINER -->
 
-                <table border="0" cellpadding="0" cellspacing="0"  width="100%" style="padding:0 0 20px 0;">
-                    {% for article in articles %}
+                <table border="0" cellpadding="0" cellspacing="0"  width="100%" height="100%" style="padding:0 0 20px 0;">
                     <!-- LIST ITEM -->
+                    {% for article in articles %}
                     <tr>
-                        <td>
-                            <!-- ARTICLE -->
-                            <table border="0" cellpadding="0" cellspacing="0" class="article" width="100%" height="100%">
-                                <tr height="20px;"></tr><!-- spacer -->
-                                <tr>
-                                  {% if article.image %}
-                                  <td align="left" class="image" width="40%">
-                                    <a class="thumb" href="{{ article.link }}">
-                                      <img alt="article.link" src="img/{{ article.image }}">
-                                    </a>
-                                  </td>
-                                  <td align="left" class="text" valign="top" height="100%" width="60%">
-                                  {% else %}
-                                  <td align="left" style="padding-left: 20px;" class="text" valign="top" height="100%" width="100%">
-                                  {% endif %}
-                                      <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
-                                        <tr valign="top">
-                                          <td>
-                                            <h3>{{ article.type }}</h3>
-                                            <h2><a href="{{ article.link }}">{{ article.title }}</a></h2>
-                                          </td>
-                                        </tr>
-                                        <tr valign="bottom">
-                                          <td>
-                                            <a class="cta cta-tweet" href="http://twitter.com/share?text={{ article.tweet }}">
-                                              Tweet
-                                            </a>
-                                            <span> | </span>
-                                            <a class="cta" href="{{ article.link }}">
-                                                {{ article.CTAtext || Read More }}
-                                            </a>
-                                          </td>
-                                        </tr>
-                                      </table>
-                                  </td>
-                                </tr>
-                                <tr height="20px;"></tr> <!-- spacer -->
+                      <td class="two-column article">
+                            <!--[if (gte mso 9)|(IE)]>
+                            <table width="100%">
+                            <tr>
+                            <td width="50%" valign="top">
+                            <![endif]-->
+                            <div class="column column-image">
+                              <table width="100%" height="100%">
+                                    <tr>
+                                        <td class="inner">
+                                          <table class="contents">
+                                            <tr>
+                                              <td>
+                                                <a class="thumb" href="{{ article.link }}">
+                                                  <img alt="{{ article.title }}" src="img/{{ article.image }}">
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if (gte mso 9)|(IE)]>
+                            </td><td width="50%" valign="top">
+                            <![endif]-->
+                            <div class="column column-text">
+                              <table width="100%" height="100%">
+                                    <tr>
+                                        <td class="inner">
+                                          <table class="contents" height="100%">
+                                            <tr valign="top">
+                                              <td>
+                                                <h3>{{ article.type }}</h3>
+                                                <h2><a href="{{ article.link }}">{{ article.title }}</a></h2>
+                                              </td>
+                                            </tr>
+                                            <tr valign="bottom">
+                                              <td>
+                                                <a class="cta cta-tweet" href="http://twitter.com/share?text={{ article.tweet }}">
+                                                  Tweet
+                                                </a>
+                                                <span> | </span>
+                                                <a class="cta" href="{{ article.link }}">
+                                                    {{ article.CTAtext || Read More }}
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if (gte mso 9)|(IE)]>
+                            </td>
+                            </tr>
                             </table>
-                            <!-- ARTICLE -->
+                            <![endif]-->
                         </td>
                     </tr>
+                    <tr height="20px">
+                    </tr>
                     {% endfor %}
-                    <!-- LIST ITEM -->
-
                     <!-- COMMUNITY -->
                     <tr>
-                        <td>
-                            <!-- COMMUNITY -->
-                            <table border="0" cellpadding="0" cellspacing="0" class="article talk" width="100%" height="100%">
-                                <tr height="30px;"></tr><!-- spacer -->
-                                <tr>
-                                  <td align="center" class="image" width="40%">
-                                    <a class="thumb" href="https://resin.io/blog/git-push-resin-design-the-new-face-of-resin-io/">
-                                      <img alt="resin-talk" src="img/icon.png">
-                                    </a>
-                                  </td>
-                                  <td align="left" class="text" valign="top" height="100%" width="60%">
-                                      <table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
-                                        <tr valign="top">
-                                          <td>
-                                            <h3>COMMUNITY</h3>
-                                            <h2><a href="https://talk.resin.io/">Working on a resin.io project or need some help integrating resin.io?</a></h2>
-                                          </td>
-                                        </tr>
-                                        <tr valign="bottom">
-                                          <td>
-                                            <a class="cta" href="ttps://talk.resin.io/">
-                                              Check out resin talk
-                                            </a>
-                                          </td>
-                                        </tr>
-                                      </table>
-                                  </td>
-                                </tr>
-                                <tr height="30px;"></tr>
-                                <!-- COMMUNITY -->
+                      <td class="two-column article talk">
+                            <!--[if (gte mso 9)|(IE)]>
+                            <table width="100%">
+                            <tr>
+                            <td width="50%" valign="top">
+                            <![endif]-->
+                            <div class="column column-image">
+                              <table width="100%" height="100%">
+                                    <tr>
+                                        <td class="inner">
+                                          <table class="contents">
+                                            <tr>
+                                              <td>
+                                                <a class="thumb" href="https://talk.resin.io/">
+                                                  <img alt="resin-talk" src="img/icon.png">
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if (gte mso 9)|(IE)]>
+                            </td><td width="50%" valign="top">
+                            <![endif]-->
+                            <div class="column column-text">
+                              <table width="100%" height="100%">
+                                    <tr>
+                                        <td class="inner">
+                                          <table class="contents" height="100%">
+                                            <tr valign="top">
+                                              <td>
+                                                <h3>COMMUNITY</h3>
+                                                <h2><a href="https://talk.resin.io/">Working on a resin.io project or need some help integrating resin.io?</a></h2>
+                                              </td>
+                                            </tr>
+                                            <tr valign="bottom">
+                                              <td>
+                                                <a class="cta" href="ttps://talk.resin.io/">
+                                                  Check out resin talk
+                                                </a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--[if (gte mso 9)|(IE)]>
+                            </td>
+                            </tr>
                             </table>
-                            <!-- COMMUNITY -->
+                            <![endif]-->
                         </td>
+                    </tr>
+                    <tr height="20px">
                     </tr>
                     <!-- LIST ITEM -->
                     <tr>
@@ -364,9 +432,9 @@
                                         <table align="center" border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 50px;" width="100%">
                                             <tr>
                                                 <td align="center">
-                                                    <a class="btn twitter" href="https://twitter.com/resin_io"><img src="https://gallery.mailchimp.com/87871f17defba2d203db77a92/images/d788ab19-2d3c-412e-8fcd-363ba1b039e9.png"><span>FOLLOW
+                                                    <a class="btn twitter" href="https://twitter.com/resin_io"><img src="img/twitter.png"><span>FOLLOW
                                                     ON TWITTER</span></a>
-                                                    <a class="btn facebook" href="https://www.facebook.com/resin.io"><img src="https://gallery.mailchimp.com/87871f17defba2d203db77a92/images/40467820-7ac8-4cc8-9127-d2d4ec18ed5c.png"><span>LIKE
+                                                    <a class="btn facebook" href="https://www.facebook.com/resin.io"><img src="img/facebook.png"><span>LIKE
                                                     ON FACEBOOK</span></a>
                                                 </td>
                                             </tr>
@@ -401,5 +469,6 @@
             </td>
         </tr>
     </table>
+</div>
 </body>
 </html>
