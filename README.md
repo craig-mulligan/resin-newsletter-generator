@@ -6,8 +6,12 @@
   * `articles` are "tier one" news features
   * `additionalLinks` are "tier two" news links on the last card
 
-2. Add any images to `/img` folder.
+2. Add any images to `/img` folder. Recommended size (600x300)
 
 3. `npm install && gulp build`
 
-4. In `/build` you'll find a zip file. Upload this to mailchimp templates.
+4. Zip and upload `/build` to mailchimp as a template
+
+// Todo: //
+* cleanup and separate styles
+* auto zip build

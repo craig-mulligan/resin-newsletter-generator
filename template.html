@@ -73,11 +73,11 @@
 		}
     .logo {
       display: inline-block;
-      width: 30px;
+      max-width: 50px;
       vertical-align: text-bottom;
+      margin-right: 5px;
     }
     .letter-title {
-      display: inline-block;
       margin-top: 0px;
     }
 		.article{
@@ -99,7 +99,7 @@
     }
     .info{
       font-size: 14px;
-      line-height: 39px;
+      line-height: 30px;
       color: #cbcbc9;
       font-weight: 100;
     }
@@ -177,41 +177,30 @@
 			vertical-align:sub;
 		}
     .padding-left {
-      padding-left: 10px;
+      padding-left: 1%;
     }
     .padding-right {
-      padding-right: 10px;
+      padding-right: 1%;
+    }
+    .column {
+        padding: 10px;
+        display: inherit;
+        width: 100%;
     }
     .two-column .column {
-        width: 100%;
-        max-width: 300px;
+        width: 60%;
         vertical-align: middle;
-        padding: 10px;
         display: inline-block;
     }
     .two-column .column-image {
-        max-width: 180px;
-        padding-right: 0px;
-    }
-    .two-column .column-text {
-        max-width: 380px;
+      width: 27%;
+      padding-right: 0px;
     }
     .column-image .contents {
       margin: 0 auto;
     }
-    @media (min-width: 630px) {
-      .two-column .column {
-        height: 100%;
-      }
-    }
-    @media (max-width: 630px) {
-      .two-column .column {
-        /*max-width: none;*/
-        /*display: inline-table;*/
-      }
-      .talk .contents {
-        text-align: center;
-      }
+    .text {
+      padding: 10px 0 20px 0;
     }
 </style>
 </head>
@@ -245,11 +234,10 @@
 
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
                                     <tr>
-                                        <td width="80%" align="left" class="padding-left">
-                                            <img class="logo" src="img/logo.png">
-                                            <h1 class="letter-title">{{ letterTitle }}</h1>
+                                        <td align="left" class="padding-left">
+                                            <h1 class="letter-title"><img class="logo" src="img/resin-christmas.png"/>{{ letterTitle }}</h1>
                                         </td>
-                                        <td width="20%" align="right" class="padding-right">December 2015</td>
+                                        <td  align="right" class="padding-right">December</td>
                                     </tr>
                                 </table><!-- LOGO + TITLES  -->
                             </td>
@@ -268,39 +256,21 @@
                     <!-- LIST ITEM -->
                     {% for article in articles %}
                     <tr>
-                      <td class="two-column article">
-                            <!--[if (gte mso 9)|(IE)]>
-                            <table width="100%">
-                            <tr>
-                            <td width="50%" valign="top">
-                            <![endif]-->
+                      <td class="one-column  article">
                             <div class="column column-image">
                               <table width="100%" height="100%">
                                     <tr>
                                         <td class="inner">
                                           <table class="contents">
-                                            <tr>
+                                            <tr width="100%">
                                               <td>
-                                                <a class="thumb" href="{{ article.link }}">
+                                                <a class="thumb" align="center" href="{{ article.link }}">
                                                   <img alt="{{ article.title }}" src="img/{{ article.image }}">
                                                 </a>
                                               </td>
                                             </tr>
-                                          </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <!--[if (gte mso 9)|(IE)]>
-                            </td><td width="50%" valign="top">
-                            <![endif]-->
-                            <div class="column column-text">
-                              <table width="100%" height="100%">
-                                    <tr>
-                                        <td class="inner">
-                                          <table class="contents" height="100%">
-                                            <tr valign="top">
-                                              <td>
+                                            <tr width="100%">
+                                              <td class="text">
                                                 <h3>{{ article.type }}</h3>
                                                 <h2><a href="{{ article.link }}">{{ article.title }}</a></h2>
                                               </td>
@@ -321,11 +291,6 @@
                                     </tr>
                                 </table>
                             </div>
-                            <!--[if (gte mso 9)|(IE)]>
-                            </td>
-                            </tr>
-                            </table>
-                            <![endif]-->
                         </td>
                     </tr>
                     <tr height="20px">

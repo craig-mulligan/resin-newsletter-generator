@@ -5,7 +5,7 @@
 		"link": "http://docs.resin.io/#/pages/installing/gettingStarted.md",
 		"type": "feature",
     "tweet": "%23RPiZero support confirmed! You can push containers to the @Raspberry_Pi ZERO with @resin_io!",
-		"image": "rpi-zero.jpeg",
+		"image": "rpi-zero.jpg",
 		"CTAtext": "Try It"
 	}, {
 		"title": "The New Face of resin.io - Dashboard redesign",
