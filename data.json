@@ -1,48 +1,50 @@
 {
-	"letterTitle": "Merry Christmas",
+	"letterTitle": "Happy New Year",
+	"letterMonth": "January",
 	"articles": [{
-		"title": "RPI ZERO Support!",
-		"link": "http://docs.resin.io/#/pages/installing/gettingStarted.md",
-		"type": "feature",
-    "tweet": "%23RPiZero support confirmed! You can push containers to the @Raspberry_Pi ZERO with @resin_io!",
-		"image": "rpi-zero.jpg",
-		"CTAtext": "Try It"
-	}, {
-		"title": "The New Face of resin.io - Dashboard redesign",
-		"link": "https://resin.io/blog/git-push-resin-design-the-new-face-of-resin-io/",
-		"type": "feature",
-    "image": "dashboard.jpg",
-    "tweet": "Git push resin design! Check out our new #UI #redesign and let us know what you think: http://buff.ly/1Lr2V8N  %23IoT",
+		"title": "Beast 2.0 - help us build a new device cluster",
+		"link": "https://resin.io/blog/tag/beast2/",
+		"type": "Project",
+    "tweet": "Beast2.0... building a bigger and better device %23cluster. http://buff.ly/1IF84Qd  %23IoT %23beast2 %23raspberrypi",
+		"image": "beast.png",
 		"CTAtext": "Read More"
 	}, {
-		"title": "Intale uses resin.io to unify the retail market",
-		"link": "https://resin.io/blog/intale-the-end-to-end-solution-for-the-retail-market/",
-		"type": "use case",
-    "image": "video.png",
-    "tweet": "[video] @intale uses @resin_io to provide an end-to-end solution for the retail market http://buff.ly/1QkbgmH %23IoT",
-		"CTAtext": "Read More"
+		"title": "Building ARM containers on any x86 machine, even DockerHub",
+		"link": "https://resin.io/blog/building-arm-containers-on-any-x86-machine-even-dockerhub/",
+		"type": "Tutorial",
+    "image": "qemu.png",
+    "tweet": "How to build containers for ARM on DockerHub? -- http://bit.ly/1RZk8ik %23Docker %23ARM %23IoT",
+		"CTAtext": "Learn More"
 	}, {
-		"title": "Our first experiments with multi-container apps",
-		"link": "https://resin.io/engineering/our-first-experiments-with-multi-container-apps/",
-		"type": "use case",
-    "image": "cat.jpeg",
-    "tweet": "Our first experiments with deploying multi-container apps to remote devices. %23Docker %23IoT %23DevOps http://buff.ly/1Mekr5t",
+		"title": "Come find us at CES 2016",
+		"link": "https://resin.io/blog/resin-io-will-bring-iot-devops-to-ces-2016/",
+		"type": "Event",
+    "image": "ces.png",
+    "tweet": "resin.io will be demoing remote software deployments for %23IoT at the @ericsson booth, CES 2016. If you are in Vegas, come say hi!",
 		"CTAtext": "Read More"
+	},{
+		"title": "A guide to cellular connectivity on resin.io devices",
+		"link": "https://resin.io/blog/cellular-connectivity/",
+		"type": "Tutorial",
+    "image": "3g_cell.png",
+    "tweet": "Take your %23IoT device on a @resin_io roadtrip. http://buff.ly/1Q86Aif  %233G %23DevOps",
+		"CTAtext": "Learn More"
+	},{
+		"title": "Visualising the location of your devices",
+		"link": "https://resin.io/blog/visualising-the-location-of-your-devices/",
+		"type": "Feature",
+    "image": "map-fleet.png",
+    "tweet": "Visualising the location of your %23IoT devices with @resin_io http://buff.ly/1Q0ETtk  %23DevOps",
+		"CTAtext": "Learn More"
 	}],
 	"additionalLinks": [{
-		"title": "How to create a custom logging system for longer log retention",
-		"link": "https://resin.io/blog/how-to-create-a-custom-logging-system-for-longer-log-retention/"
+		"title": "Preloaded Containers - Burn & Ship",
+		"link": "https://resin.io/blog/preloaded-containers/"
 	}, {
-		"title": "Running the LDA algorithm on a Raspberry Pi: The resin.io way",
-		"link": "https://resin.io/blog/running-the-lda-algorithm-on-raspberry-pi-the-resin-io-way/"
+		"title": "Settling in Seattle",
+		"link": "https://resin.io/blog/settling-in-seattle/"
 	}, {
-		"title": "How to build an IoT Application with Resin.IO - Part 2",
-		"link": "http://www.rs-online.com/designspark/electronics/eng/knowledge-item/how-to-build-and-iot-application-with-resin-io-part-2?/designspark/electronics/knowledge-item/how-to-build-and-iot-application-with-resin-io-part-2="
-	}, {
-		"title": "Intel’s Next Unit of Computing (NUC): The PC re-defined",
-		"link": "https://resin.io/blog/intel-next-unit-of-computing-nuc-the-pc-redefined/"
-	}, {
-		"title": "Resin.io brought IoT DevOps to DockerCon Europe",
-		"link": "https://resin.io/blog/resin-io-brought-iot-devops-to-dockercon-europe/"
+		"title": "The Open Container Initiative",
+		"link": "https://resin.io/blog/open-container-initiative/"
 	}]
 }
