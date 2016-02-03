@@ -14,6 +14,7 @@ gulp.task('compile', function() {
   return gulp.src('./template.html')
     .pipe(data(getJsonData))
     .pipe(swig())
+    .pipe(swig({defaults: { cache: false }}))
     .pipe(gulp.dest('build'));
 });
 

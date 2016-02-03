@@ -8,7 +8,7 @@
 
 2. Add any images to `/img` folder. Recommended size (600x300)
 
-3. `npm install && gulp compile`
+3. `npm install && gulp`
 
 4. Zip and upload `/build` to mailchimp as a template
 

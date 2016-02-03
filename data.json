@@ -1,50 +1,44 @@
 {
-	"letterTitle": "Happy New Year",
-	"letterMonth": "January",
+	"letterTitle": "The latest resin resources",
+	"letterMonth": "February",
 	"articles": [{
-		"title": "Beast 2.0 - help us build a new device cluster",
+		"title": "How we run a remote team at resin.io",
+		"link": "https://resin.io/blog/how-we-run-a-remote-team/",
+		"type": "Article",
+    "tweet": "How we run a %23remote team at @resin_io http://buff.ly/1nBcpLo  %23startup %23remotework %23IoT",
+		"image": "team.png",
+		"CTAtext": "Read More"
+	}, {
+		"title": "Updating an Arduino with resin.io",
+		"link": "https://resin.io/blog/updating-an-arduino-with-resin-io/",
+		"type": "Tutorial",
+    "image": "arduino.gif",
+    "tweet": "How to update an @arduino and a @docker container with a single git push. %23IoT %23DevOps http://buff.ly/1RnyoBB",
+		"CTAtext": "Learn More"
+	}, {
+		"title": "Good, Better, Beast",
 		"link": "https://resin.io/blog/tag/beast2/",
 		"type": "Project",
-    "tweet": "Beast2.0... building a bigger and better device %23cluster. http://buff.ly/1IF84Qd  %23IoT %23beast2 %23raspberrypi",
-		"image": "beast.png",
-		"CTAtext": "Read More"
-	}, {
-		"title": "Building ARM containers on any x86 machine, even DockerHub",
-		"link": "https://resin.io/blog/building-arm-containers-on-any-x86-machine-even-dockerhub/",
-		"type": "Tutorial",
-    "image": "qemu.png",
-    "tweet": "How to build containers for ARM on DockerHub? -- http://bit.ly/1RZk8ik %23Docker %23ARM %23IoT",
-		"CTAtext": "Learn More"
-	}, {
-		"title": "Come find us at CES 2016",
-		"link": "https://resin.io/blog/resin-io-will-bring-iot-devops-to-ces-2016/",
-		"type": "Event",
-    "image": "ces.png",
-    "tweet": "resin.io will be demoing remote software deployments for %23IoT at the @ericsson booth, CES 2016. If you are in Vegas, come say hi!",
+    "image": "beast.png",
+    "tweet": ".@resin.io is building a new modular %23device %23cluster with over 120 devices %23rpi http://buff.ly/1Vgefvk",
 		"CTAtext": "Read More"
 	},{
-		"title": "A guide to cellular connectivity on resin.io devices",
-		"link": "https://resin.io/blog/cellular-connectivity/",
+		"title": "Home automation using Python, Flask & Celery",
+		"link": "https://resin.io/blog/home-automation-using-python-flask-celery/",
 		"type": "Tutorial",
-    "image": "3g_cell.png",
-    "tweet": "Take your %23IoT device on a @resin_io roadtrip. http://buff.ly/1Q86Aif  %233G %23DevOps",
+    "image": "home.png",
+    "tweet": "Kicking off our community series @metakermit explains how to control Chromecast from a resin.io device! http://buff.ly/1VQAE3m  %23IoT %23hack",
 		"CTAtext": "Learn More"
 	},{
-		"title": "Visualising the location of your devices",
-		"link": "https://resin.io/blog/visualising-the-location-of-your-devices/",
-		"type": "Feature",
-    "image": "map-fleet.png",
-    "tweet": "Visualising the location of your %23IoT devices with @resin_io http://buff.ly/1Q0ETtk  %23DevOps",
+		"title": "Protect your resin.io devices with a watchdog",
+		"link": "https://resin.io/blog/protect-your-resin-io-devices-with-a-watchdog/",
+		"type": "Tutorial",
+    "image": "watchdog.png",
+    "tweet": "How to protect your %23IoT devices from complete system failures. %23DevOps %23embedded %23systemd http://buff.ly/1JBB4ZP",
 		"CTAtext": "Learn More"
 	}],
 	"additionalLinks": [{
-		"title": "Preloaded Containers - Burn & Ship",
-		"link": "https://resin.io/blog/preloaded-containers/"
-	}, {
-		"title": "Settling in Seattle",
-		"link": "https://resin.io/blog/settling-in-seattle/"
-	}, {
-		"title": "The Open Container Initiative",
-		"link": "https://resin.io/blog/open-container-initiative/"
+		"title": "How to sanely maintain over 40 npm modules",
+		"link": "https://medium.com/@jviotti/how-i-manage-to-maintain-a-lot-of-code-projects-779e5173f25c"
 	}]
 }
