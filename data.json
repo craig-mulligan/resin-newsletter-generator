@@ -1,44 +1,58 @@
 {
-	"letterTitle": "The latest resin resources",
-	"letterMonth": "February",
+	"letterTitle": "Big News",
+	"letterMonth": "March",
 	"articles": [{
-		"title": "How we run a remote team at resin.io",
-		"link": "https://resin.io/blog/how-we-run-a-remote-team/",
+		"title": "Introducing the resin.io CLI",
+		"link": "https://resin.io/blog/introducing-the-cli/",
+		"type": "Feature",
+    "tweet": "Official release of resin CLI! All of resin.io from the comfort of your terminal http://buff.ly/1U3b6ki  %23IoT %23DevOps",
+		"image": "cli.png",
+		"CTAtext": "Read More"
+	}, {
+		"title": "Snappin.io and the Advertising of Things [video]",
+		"link": "https://resin.io/blog/snappin-and-the-internet-of-advertising/",
+		"type": "Case Study",
+    "image": "video.png",
+    "tweet": "New case study video! See how Snappin.io are changing the retail experience! http://buff.ly/1TqPe1F %23IoT",
+		"CTAtext": "Watch the video"
+	}, {
+		"title": "Will resin.io ever support Android?",
+		"link": "https://resin.io/blog/will-resin-io-ever-support-android/",
 		"type": "Article",
-    "tweet": "How we run a %23remote team at @resin_io http://buff.ly/1nBcpLo  %23startup %23remotework %23IoT",
-		"image": "team.png",
-		"CTAtext": "Read More"
-	}, {
-		"title": "Updating an Arduino with resin.io",
-		"link": "https://resin.io/blog/updating-an-arduino-with-resin-io/",
-		"type": "Tutorial",
-    "image": "arduino.gif",
-    "tweet": "How to update an @arduino and a @docker container with a single git push. %23IoT %23DevOps http://buff.ly/1RnyoBB",
-		"CTAtext": "Learn More"
-	}, {
-		"title": "Good, Better, Beast",
-		"link": "https://resin.io/blog/tag/beast2/",
-		"type": "Project",
-    "image": "beast.png",
-    "tweet": ".@resin.io is building a new modular %23device %23cluster with over 120 devices %23rpi http://buff.ly/1Vgefvk",
+    "image": "android.jpg",
+    "tweet": "Will resin.io ever support %23Android? http://buff.ly/1oEUxQ7",
 		"CTAtext": "Read More"
 	},{
-		"title": "Home automation using Python, Flask & Celery",
-		"link": "https://resin.io/blog/home-automation-using-python-flask-celery/",
-		"type": "Tutorial",
-    "image": "home.png",
-    "tweet": "Kicking off our community series @metakermit explains how to control Chromecast from a resin.io device! http://buff.ly/1VQAE3m  %23IoT %23hack",
-		"CTAtext": "Learn More"
+		"title": "Updating config.txt remotely",
+		"link": "https://resin.io/blog/updating-config-txt-remotely/",
+		"type": "Feature",
+    "image": "configtxt.png",
+    "tweet": "Update your %23RaspberryPi config.txt remotely with resin.io! http://buff.ly/1KQuyPx",
+		"CTAtext": "Check it out!"
 	},{
-		"title": "Protect your resin.io devices with a watchdog",
-		"link": "https://resin.io/blog/protect-your-resin-io-devices-with-a-watchdog/",
-		"type": "Tutorial",
-    "image": "watchdog.png",
-    "tweet": "How to protect your %23IoT devices from complete system failures. %23DevOps %23embedded %23systemd http://buff.ly/1JBB4ZP",
+		"title": "Customize the way your devices are updated",
+		"link": "https://resin.io/blog/customize-the-way-your-devices-are-updated/",
+		"type": "Feature",
+    "image": "updateStrategies.png",
+    "tweet": "New feature alert! Customize the way your devices are updated. http://buff.ly/1oHjUAR",
 		"CTAtext": "Learn More"
 	}],
-	"additionalLinks": [{
-		"title": "How to sanely maintain over 40 npm modules",
-		"link": "https://medium.com/@jviotti/how-i-manage-to-maintain-a-lot-of-code-projects-779e5173f25c"
-	}]
+	"additionalLinks": [
+		{
+			"title": "The next resin.io",
+			"link": "https://resin.io/blog/the-next-resin/"
+		},
+		{
+			"title": "Build a monitoring dashboard with resin.io",
+			"link": "https://resin.io/blog/building-a-monitoring-dashboard-with-resin-io/"
+		},
+		{
+			"title": "How to sanely maintain over 40 npm modules",
+			"link": "https://medium.com/@jviotti/how-i-manage-to-maintain-a-lot-of-code-projects-779e5173f25c"
+		},
+		{
+			"title": "Good, Better, Beast updates!",
+			"link": "https://resin.io/blog/tag/beast2/"
+		}
+	]
 }
