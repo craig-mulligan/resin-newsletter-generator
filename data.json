@@ -1,58 +1,65 @@
 {
-	"letterTitle": "Big News",
-	"letterMonth": "March",
+	"letterTitle": "",
+	"letterMonth": "Best of April",
 	"articles": [{
-		"title": "Introducing the resin.io CLI",
-		"link": "https://resin.io/blog/introducing-the-cli/",
-		"type": "Feature",
-    "tweet": "Official release of resin CLI! All of resin.io from the comfort of your terminal http://buff.ly/1U3b6ki  %23IoT %23DevOps",
-		"image": "cli.png",
+		"title": "We built an open source, x-platform image burner.",
+		"link": "https://resin.io/blog/introducing-etcher",
+		"type": "Etcher.io",
+    "tweet": "Etcher.io an awesome new way to write SD cards. Give it a shot and you'll never go back! http://www.etcher.io",
+		"image": "etcher.png",
 		"CTAtext": "Read More"
 	}, {
-		"title": "Snappin.io and the Advertising of Things [video]",
-		"link": "https://resin.io/blog/snappin-and-the-internet-of-advertising/",
-		"type": "Case Study",
-    "image": "video.png",
-    "tweet": "New case study video! See how Snappin.io are changing the retail experience! http://buff.ly/1TqPe1F %23IoT",
-		"CTAtext": "Watch the video"
+		"title": "The Things Network gateway on resin.io",
+		"link": "https://github.com/rayozzie/ttn-resin-gateway-rpi-ic880a",
+		"type": "Project",
+    "image": "ThingsNetwork.jpg",
+    "tweet": "Awesome! Checkout the TTN Gateway installer for the IMST ic880a on @resin_io by @rozzie",
+		"CTAtext": "Check it out"
 	}, {
-		"title": "Will resin.io ever support Android?",
-		"link": "https://resin.io/blog/will-resin-io-ever-support-android/",
-		"type": "Article",
-    "image": "android.jpg",
-    "tweet": "Will resin.io ever support %23Android? http://buff.ly/1oEUxQ7",
-		"CTAtext": "Read More"
-	},{
-		"title": "Updating config.txt remotely",
-		"link": "https://resin.io/blog/updating-config-txt-remotely/",
+		"title": "Reduce your device's bandwidth by 500x",
+		"link": "https://resin.io/blog/device-bandwidthdata-usage-how-low-can-we-go/",
 		"type": "Feature",
-    "image": "configtxt.png",
-    "tweet": "Update your %23RaspberryPi config.txt remotely with resin.io! http://buff.ly/1KQuyPx",
-		"CTAtext": "Check it out!"
-	},{
-		"title": "Customize the way your devices are updated",
-		"link": "https://resin.io/blog/customize-the-way-your-devices-are-updated/",
-		"type": "Feature",
-    "image": "updateStrategies.png",
-    "tweet": "New feature alert! Customize the way your devices are updated. http://buff.ly/1oHjUAR",
+    "image": "dataUsage.png",
+    "tweet": "Reduce you %23embedded device fleets bandwidth by 500x %23DevOps %23IoT",
 		"CTAtext": "Learn More"
+	}, {
+		"title": "Virtual resin.io meetup",
+		"link": "https://resin.io/blog/virtual-resin-io-meetup",
+		"type": "Event",
+    "image": "meetup.png",
+    "tweet": "%23Virtual %23meetup: bring DevOps to %23IoT with @resin_io - signup now! http://bit.ly/1qmzdiZ",
+		"CTAtext": "Learn More"
+	}, {
+		"title": "Spring Cleaning - The New Web-terminal",
+		"link": "https://resin.io/blog/spring-cleaning-the-new-web-terminal/",
+		"type": "Feature",
+    "image": "webterm.jpg",
+    "tweet": "Resin.io completely rebuilt their web-terminal feature! It's faster and better looking. http://buff.ly/1MjsqjP",
+		"CTAtext": "Learn More"
+	}, {
+		"title": "Multi-container with docker-compose on resin.io",
+		"link": "https://resin.io/blog/multi-container-with-docker-compose-on-resin-io/",
+		"type": "Community Project",
+    "image": "Compose.png",
+    "tweet": "Deploying multiple %23containers with @docker compose on @resin_io by @justindray http://buff.ly/1UCI7G2 %23IoT %23DevOps",
+		"CTAtext": "Check it out!"
 	}],
 	"additionalLinks": [
 		{
-			"title": "The next resin.io",
-			"link": "https://resin.io/blog/the-next-resin/"
+			"title": "Open-sourcing resin.io, part three: The universal base image",
+			"link": "https://resin.io/blog/open-sourcing-resin-io-part-three-the-universal-base-image/"
 		},
 		{
-			"title": "Build a monitoring dashboard with resin.io",
-			"link": "https://resin.io/blog/building-a-monitoring-dashboard-with-resin-io/"
+			"title": "New Supervisor endpoint: Device State",
+			"link": "https://resin.io/blog/new-supervisor-endpoint-device-state/"
 		},
 		{
-			"title": "How to sanely maintain over 40 npm modules",
-			"link": "https://medium.com/@jviotti/how-i-manage-to-maintain-a-lot-of-code-projects-779e5173f25c"
+			"title": "Public Device URL Improvements",
+			"link": "https://resin.io/blog/new-supervisor-endpoint-device-state/"
 		},
 		{
-			"title": "Good, Better, Beast updates!",
-			"link": "https://resin.io/blog/tag/beast2/"
+			"title": "Planning lunch with a Slackbot on resin.io",
+			"link": "https://resin.io/blog/planning-lunch-with-a-slackbot-on-resin-io/"
 		}
 	]
 }
