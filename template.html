@@ -48,7 +48,7 @@
 		h2{
 			font-weight:bold;
 			font-size:22px;
-			line-height:25px;
+			line-height:30px;
 			margin: 0px;
       padding-right: 5px;
 		}
@@ -95,6 +95,10 @@
       font-size:12px !important;
     }
     .meta a,.info a{
+      color: #cbcbc9;
+    }
+
+    .linkCat {
       color: #cbcbc9;
     }
     .info{
@@ -152,15 +156,15 @@
     .addtional-card {
       text-align: center;
     }
-    .addtional-card h2 {
+    .additional-card h2 {
       margin-bottom: 20px;
     }
-    .addtional-card a {
+    .additional-card a {
       color: #71b4ec;
       font-weight: bold;
       text-decoration: underline;
       margin-bottom: 20px;
-      display: block;
+      display: inline-block;
     }
     .btn{
 			padding:15px;
@@ -333,7 +337,7 @@
                                               <tr valign="top">
                                                 <td>
                                                   <h3>COMMUNITY</h3>
-                                                  <h2><a href="https://gitter.im/resin-io/chat">Chat with the resin.io team and fellow users!</a></h2>
+                                                  <h2><a href="https://gitter.im/resin-io/chat">Join our Gitter chatroom and discuss with the resin.io team and fellow users!</a></h2>
                                                 </td>
                                               </tr>
                                               <tr valign="bottom">
@@ -362,13 +366,13 @@
                     <!-- ADDITIONAL ARTICLES -->
                     <tr>
                         <td>
-                            <table border="0" cellpadding="0" cellspacing="0" class="article addtional-card" width="100%" height="100%">
+                            <table border="0" cellpadding="0" cellspacing="0" class="article additional-card" width="100%" height="100%">
                                 <tr height="30px;"></tr>
                                 <tr>
-                                  <td>
+                                  <td style="padding: 0 20px;">
                                     <h2>More great stuff this month!</h2>
                                     {% for item in additionalLinks %}
-                                      <a href="{{ item.link }}">{{ item.title }}</a>
+                                      <a href="{{ item.link }}">{{ item.title }}</a><span class="linkCat"> | {{ item.category }}</span></br>
                                     {% endfor %}
                                   </td>
                                 </tr>

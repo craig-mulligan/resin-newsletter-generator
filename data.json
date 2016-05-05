@@ -1,36 +1,36 @@
 {
 	"letterTitle": "",
-	"letterMonth": "Best of April",
+	"letterMonth": "April",
 	"articles": [{
-		"title": "We built an open source, x-platform image burner.",
+		"title": "Meet Etcher: A better way to write SD cards",
 		"link": "https://resin.io/blog/introducing-etcher",
 		"type": "Etcher.io",
     "tweet": "Etcher.io an awesome new way to write SD cards. Give it a shot and you'll never go back! http://www.etcher.io",
 		"image": "etcher.png",
 		"CTAtext": "Read More"
 	}, {
-		"title": "The Things Network gateway on resin.io",
+		"title": "Build and manage The Things Network gateway using resin.io (by @rozzie)",
 		"link": "https://github.com/rayozzie/ttn-resin-gateway-rpi-ic880a",
-		"type": "Project",
+		"type": "Community Project",
     "image": "ThingsNetwork.jpg",
     "tweet": "Awesome! Checkout the TTN Gateway installer for the IMST ic880a on @resin_io by @rozzie",
 		"CTAtext": "Check it out"
 	}, {
-		"title": "Reduce your device's bandwidth by 500x",
+		"title": "How to reduce your device's bandwidth by 500x",
 		"link": "https://resin.io/blog/device-bandwidthdata-usage-how-low-can-we-go/",
 		"type": "Feature",
-    "image": "dataUsage.png",
-    "tweet": "Reduce you %23embedded device fleets bandwidth by 500x %23DevOps %23IoT",
+    "image": "bandwidth.png",
+    "tweet": "How to reduce you %23embedded device fleets bandwidth by 500x %23DevOps %23IoT",
 		"CTAtext": "Learn More"
 	}, {
 		"title": "Virtual resin.io meetup",
 		"link": "https://resin.io/blog/virtual-resin-io-meetup",
 		"type": "Event",
-    "image": "meetup.png",
+    "image": "iot-eclipse.png",
     "tweet": "%23Virtual %23meetup: bring DevOps to %23IoT with @resin_io - signup now! http://bit.ly/1qmzdiZ",
 		"CTAtext": "Learn More"
 	}, {
-		"title": "Spring Cleaning - The New Web-terminal",
+		"title": "Brand new web terminal: Starts faster, looks slicker, supports copy & paste!",
 		"link": "https://resin.io/blog/spring-cleaning-the-new-web-terminal/",
 		"type": "Feature",
     "image": "webterm.jpg",
@@ -46,19 +46,23 @@
 	}],
 	"additionalLinks": [
 		{
-			"title": "Open-sourcing resin.io, part three: The universal base image",
+			"title": "Open-sourcing resin.io: The universal base image",
+			"category": "Open Source",
 			"link": "https://resin.io/blog/open-sourcing-resin-io-part-three-the-universal-base-image/"
 		},
 		{
 			"title": "New Supervisor endpoint: Device State",
+			"category": "Feature",
 			"link": "https://resin.io/blog/new-supervisor-endpoint-device-state/"
 		},
 		{
 			"title": "Public Device URL Improvements",
-			"link": "https://resin.io/blog/new-supervisor-endpoint-device-state/"
+			"category": "Feature",
+			"link": "https://resin.io/blog/public-device-url-improvements/"
 		},
 		{
 			"title": "Planning lunch with a Slackbot on resin.io",
+			"category": "Community Project",
 			"link": "https://resin.io/blog/planning-lunch-with-a-slackbot-on-resin-io/"
 		}
 	]
