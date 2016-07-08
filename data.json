@@ -1,69 +1,47 @@
 {
-	"letterTitle": "",
-	"letterMonth": "April",
-	"articles": [{
-		"title": "Meet Etcher: A better way to write SD cards",
-		"link": "https://resin.io/blog/introducing-etcher",
-		"type": "Etcher.io",
-    "tweet": "Etcher.io an awesome new way to write SD cards. Give it a shot and you'll never go back! http://www.etcher.io",
-		"image": "etcher.png",
-		"CTAtext": "Read More"
-	}, {
-		"title": "Build and manage The Things Network gateway using resin.io (by @rozzie)",
-		"link": "https://github.com/rayozzie/ttn-resin-gateway-rpi-ic880a",
-		"type": "Community Project",
-    "image": "ThingsNetwork.jpg",
-    "tweet": "Awesome! Checkout the TTN Gateway installer for the IMST ic880a on @resin_io by @rozzie",
-		"CTAtext": "Check it out"
-	}, {
-		"title": "How to reduce your device's bandwidth by 500x",
-		"link": "https://resin.io/blog/device-bandwidthdata-usage-how-low-can-we-go/",
-		"type": "Feature",
-    "image": "bandwidth.png",
-    "tweet": "How to reduce you %23embedded device fleets bandwidth by 500x %23DevOps %23IoT",
-		"CTAtext": "Learn More"
-	}, {
-		"title": "Virtual resin.io meetup",
-		"link": "https://resin.io/blog/virtual-resin-io-meetup",
-		"type": "Event",
-    "image": "iot-eclipse.png",
-    "tweet": "%23Virtual %23meetup: bring DevOps to %23IoT with @resin_io - signup now! http://bit.ly/1qmzdiZ",
-		"CTAtext": "Learn More"
-	}, {
-		"title": "Brand new web terminal: Starts faster, looks slicker, supports copy & paste!",
-		"link": "https://resin.io/blog/spring-cleaning-the-new-web-terminal/",
-		"type": "Feature",
-    "image": "webterm.jpg",
-    "tweet": "Resin.io completely rebuilt their web-terminal feature! It's faster and better looking. http://buff.ly/1MjsqjP",
-		"CTAtext": "Learn More"
-	}, {
-		"title": "Multi-container with docker-compose on resin.io",
-		"link": "https://resin.io/blog/multi-container-with-docker-compose-on-resin-io/",
-		"type": "Community Project",
-    "image": "Compose.png",
-    "tweet": "Deploying multiple %23containers with @docker compose on @resin_io by @justindray http://buff.ly/1UCI7G2 %23IoT %23DevOps",
-		"CTAtext": "Check it out!"
-	}],
-	"additionalLinks": [
+	"letterTitle": "Resin.io",
+	"breakingNews": {
+		"title": "Funding Announcement!",
+		"link": "https://resin.io/blog/resin-io-secures-9-million-in-funding-to-accelerate-growth-of-next-generation-iot-devops-platform/",
+		"text": "Massive thank you to our investors DFJ, GE Ventures, Ericsson, and Aspect Ventures, but most importantly to you. We couldn't have gotten this far without the community's validation and input. This new round will help us meet your needs and our goals. Big things on the way!",
+		"CTAtext": "Read"
+	},
+	"categories": [
 		{
-			"title": "Open-sourcing resin.io: The universal base image",
-			"category": "Open Source",
-			"link": "https://resin.io/blog/open-sourcing-resin-io-part-three-the-universal-base-image/"
+		"title": "Blog",
+		"articles": [{
+			"title": "No hardware? Use VirtualBox to simulate a device for resin.io!",
+			"link": "https://resin.io/blog/no-hardware-use-virtualbox/",
+			"image": "https://resin.io/blog/content/images/2016/07/Virtualbox-boot-screen.png",
+			"CTAtext": "Learn More"
+			}, {
+				"title": "How We Fixed the Raspberry Pi GPU for Containers",
+				"link": "https://resin.io/blog/raspberry-pi-gpu-for-containers/",
+				"CTAtext": "Read"
+		 },{
+			 "title": "Monitoring linux stats with Prometheus.io",
+			 "link": "https://resin.io/blog/monitoring-linux-stats-with-prometheus-io/",
+			 "CTAtext": "Read"
+		},{
+			"title": "Beaglebone Green Wireless and resin.io getting started",
+			"link": "http://www.seeed.cc/project_detail.html?id=1671",
+			"CTAtext": "Read"
+			}]
+		}
+	],
+
+	"events": [
+		{
+			"title": "First Community meetup",
+			"date": "Past",
+			"location": "30MHZ | Amsterdam, USA",
+			"link": "https://www.30mhz.com/events/resioniomeetup"
 		},
 		{
-			"title": "New Supervisor endpoint: Device State",
-			"category": "Feature",
-			"link": "https://resin.io/blog/new-supervisor-endpoint-device-state/"
-		},
-		{
-			"title": "Public Device URL Improvements",
-			"category": "Feature",
-			"link": "https://resin.io/blog/public-device-url-improvements/"
-		},
-		{
-			"title": "Planning lunch with a Slackbot on resin.io",
-			"category": "Community Project",
-			"link": "https://resin.io/blog/planning-lunch-with-a-slackbot-on-resin-io/"
+			"title": "AT&T Shape",
+			"date": "July 15–16 2016",
+			"location": "AT&T Park | San Francisco, USA",
+			"link": "https://shape.att.com/"
 		}
 	]
 }

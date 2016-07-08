@@ -1,0 +1,41 @@
+<!-- Data Table : BEGIN -->
+<tr>
+  <td width="92%" style="padding: 4%;">
+    <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" dir="ltr">
+      <tr>
+        <td valign="middle" width="80" style="padding:5px 0; text-align:left; line-height: 0;" class="stack-column-center">
+          <img src="https://resin.io/blog/content/images/2016/07/events.png" srcset="https://resin.io/blog/content/images/2016/07/events.png 1x, https://resin.io//blog/content/images/2016/07/events-2x.png 2x" alt="resin.io Logo" height="26" border="0" style="margin: auto; vertical-align: sub;">
+          <h2 style="display:inline-block">Events</h2>
+        </td>
+      </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+      <tr>
+        <td valign="top" align="left" style="padding: 10px 0; line-height: 26px; font-weight: bold; border-bottom: 1px solid #cccccc" class="data-table-th">
+          Name
+        </td>
+        <td valign="top" align="left" style="padding: 10px 0; line-height: 26px; font-weight: bold; border-bottom: 1px solid #cccccc" class="data-table-th">
+          Date
+        </td>
+        <td valign="top" align="left" style="padding: 10px 0; line-height: 26px; font-weight: bold; border-bottom: 1px solid #cccccc" class="data-table-th">
+          Location
+        </td>
+      </tr>
+      {% for event in events %}
+      <tr>
+        <td valign="top" align="left" style="padding: 10px 0; line-height: 26px; border-bottom: 1px solid #eeeeee" class="data-table-td-title">
+          <a href="{{ event.link }}">{{ event.title }}</a>
+        </td>
+        <td valign="top" align="left" style="padding: 10px 0; line-height: 26px; border-bottom: 1px solid #eeeeee" class="data-table-td">
+          {{ event.date }}
+        </td>
+        <td valign="top" align="left" style="padding: 10px 0; line-height: 26px; border-bottom: 1px solid #eeeeee" class="data-table-td">
+          {{ event.location }}
+        </td>
+        <td style="display: none;" class="data-table-mobile-divider">&nbsp;</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </td>
+</tr>
+<!-- Data Table : END -->

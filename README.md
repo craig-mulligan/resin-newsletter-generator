@@ -3,15 +3,12 @@
 ### To make a newsletter:
 
 1. Populate `data.json` with new content:
-  * `articles` are "tier one" news features
-  * `additionalLinks` are "tier two" news links on the last card
 
-2. Add any images to `/img` folder. Recommended size (600x300)
+2. Make sure images are served remotely
 
 3. `npm install && gulp`
 
-4. Zip and upload `/build` to mailchimp as a template
+4. Editing `html` - run `$ gulp watch`
 
 // Todo: //
 * cleanup and separate styles
-* auto zip build

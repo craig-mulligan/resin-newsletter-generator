@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+  <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+  <title>resin.io | Newsletter</title><!-- The title tag shows in email notifications, like Android 4.4. -->
+  <style type="text/css">
+
+    /* What it does: Remove spaces around the email design added by some email clients. */
+    /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100% !important;
+      width: 100% !important;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 400; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased;
+      -webkit-text-size-adjust:none;
+      -ms-text-size-adjust:none;
+      line-height: 26px;
+      color: #2f2f33;
+      background: #E4E9F0;
+    }
+
+    h1 {
+      font-size: 35px;
+      line-height: 38px;
+    }
+
+    h2 {
+      font-size: 27px;
+    }
+
+    h3 {
+      font-size: 21px;
+      line-height: 24px;
+    }
+
+    /* What it does: Stops email clients resizing small text. */
+    * {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* What it does: Forces Outlook.com to display emails full width. */
+    .ExternalClass {
+      width: 100%;
+    }
+
+    /* What it does: Stops Outlook from adding extra spacing to tables. */
+    table,
+    td {
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    /* What it does: Fixes webkit padding issue. */
+    table {
+      border-spacing:0 !important;
+    }
+
+    /* What it does: Fixes Outlook.com line height. */
+    .ExternalClass,
+    .ExternalClass * {
+      line-height: 100%;
+    }
+
+    /* What it does: Fix for Yahoo mail table alignment bug. */
+    table {
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+
+    /* What it does: Uses a better rendering method when resizing images in IE. */
+    img {
+      -ms-interpolation-mode:bicubic;
+    }
+
+    /* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+    .yshortcuts a {
+      border-bottom: none !important;
+    }
+
+    /* What it does: Overrides blue, underlined link auto-detected by iOS Mail. */
+    /* Create a class for every link style needed; this template needs only one for the link in the footer. */
+    .mobile-link--footer a {
+      color: #28affa !important;
+    }
+
+    a {
+      color: #77b3e3;
+    }
+
+    .link-plain {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .link-cta {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .link-btn {
+      padding: 15px 20px;
+      color: #fff;
+      background: #28affa;
+      margin-right: 5px;
+    }
+
+    table.button a {
+      color: #fff;
+    }
+
+    /* What it does: Overrides styles added images. */
+    img {
+      border:0 !important;
+      outline:none !important;
+      text-decoration:none !important;
+    }
+
+    .community, .social {
+      border-color: #E4E9F0;
+      border-width: 3px;
+    }
+
+    .email-container {
+      width:600px;
+      margin: auto;
+    }
+
+    .footer {
+      background: #2e2e30;
+      color: #fff !important;
+    }
+
+    .border-bottom {
+      border-bottom: 1px solid #E4E9F0;
+    }
+
+    /* Media Queries */
+    @media screen and (max-device-width: 600px), screen and (max-width: 600px) {
+
+      /* What it does: Overrides email-container's desktop width and forces it into a 100% fluid width. */
+      .email-container {
+        width: 100% !important;
+      }
+
+      /* What it does: Forces images to resize to the width of their container. */
+      img[class="fluid"],
+      img[class="fluid-centered"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin: auto !important;
+      }
+      /* And center justify these ones. */
+      img[class="fluid-centered"] {
+        margin: auto !important;
+      }
+
+      /* What it does: Forces table cells into full-width rows. */
+      td[class="stack-column"],
+      td[class="stack-column-center"] {
+        display: block !important;
+        width: 100% !important;
+        direction: ltr !important;
+      }
+      /* And center justify these ones. */
+      td[class="stack-column-center"] {
+        text-align: center !important;
+      }
+
+      /* Data Table Styles */
+      /* What it does: Hides table headers */
+      td[class="data-table-th"] {
+        display: none !important;
+      }
+      /* What it does: Hides table headers */
+      td[class="data-table-th"] {
+        display: none !important;
+      }
+      /* What it does: Change the look and layout of the remaining td's */
+      td[class="data-table-td"],
+      td[class="data-table-td-title"] {
+        display: block !important;
+        width: 100% !important;
+        border: 0 !important;
+      }
+      /* What it does: Changes the appearance of the first td in each row */
+      td[class="data-table-td-title"] {
+        font-weight: bold;
+        color: #333333;
+        padding: 10px 0 0 0 !important;
+        border-top: 2px solid #eeeeee !important;
+      }
+      /* What it does: Changes the appearance of the other td's in each row */
+      td[class="data-table-td"] {
+        padding: 5px 0 0 0 !important
+      }
+      /* What it does: Provides a visual divider between table rows. In this case, a bit of extra space. */
+      td[class="data-table-mobile-divider"] {
+        display: block !important;
+        height: 20px;
+      }
+      /* END Data Table Styles */
+
+    }
+
+  </style>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%" ><tr><td>
+
+  <!-- Visually Hidden Preheader Text : BEGIN -->
+  <div style="display:none;font-size:1px;color:#222222;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide: all;">
+  <!--  (Optional) This text will appear in the inbox preview, but not the email body. -->
+    resin.io monthly
+  </div>
+  <!-- Visually Hidden Preheader Text : END -->
+
+  <!-- Email wrapper : BEGIN -->
+  <table border="0" width="600" cellpadding="0" cellspacing="0" align="center" class="email-container">
+    <tr>
+      <td>
+        <!-- Logo + Links : BEGIN -->
+        <table border="0" width="100%" cellpadding="0" cellspacing="0">
+          <tr><td height="5" style="font-size: 0; line-height: 0;">&nbsp;</td></tr>
+          <tr>
+            <td valign="middle" style="padding:5px 0; text-align:left; line-height: 0;" class="stack-column-center">
+              <a class="link-plain" href="https://resin.io">
+                <img src="https://resin.io/blog/content/images/2016/05/logo.png" alt="resin.io Logo" height="26" border="0" style="margin: auto;">
+                <span style="vertical-align: super;">{{ letterTitle }}</span>
+              </a>
+            </td>
+          </tr>
+          <tr><td height="5" style="font-size: 0; line-height: 0;">&nbsp;</td></tr>
+        </table>
+        <!-- Logo + Links : END -->
+
+        <!-- Main Email Body : BEGIN -->
+        <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+          <!-- Single Fluid Image, No Crop : BEGIN -->
+          <tr>
+            <td valign="middle" width="80" style="padding: 5px 4%; text-align:left; line-height: 0;" class="stack-column-center">
+              <img src="https://resin.io/blog/content/images/2016/07/breaking-news.png" srcset="https://resin.io/blog/content/images/2016/07/breaking-news.png 1x, https://resin.io/blog/content/images/2016/07/breaking-news-2x.png 2x" alt="resin.io Logo" height="26" border="0" style="margin: auto; vertical-align: sub;">
+              <h2 style="display:inline-block">Breaking News</h2>
+            </td>
+          </tr>
+          <!-- Single Fluid Image, No Crop : END -->
+          <!-- Single Fluid Image, No Crop : BEGIN -->
+          {% if breakingNews.image %}
+          <tr>
+            <td style="padding: 0 4%;" valign="middle" align="center">
+              <a class="link-plain" href="{{ breakingNews.link }}">
+                <img src="{{ breakingNews.image }}" alt="alt text" height="300" width="100%" align="center" border="0" style="margin: auto;" class="fluid">
+              </a>
+            </td>
+          </tr>
+          {% endif %}
+          <!-- Single Fluid Image, No Crop : END -->
+          <!-- Main title : BEGIN -->
+          <tr>
+            <td style="padding: 0 4%;" valign="middle" align="left">
+              <a class="link-plain" href="{{ breakingNews.link }}"><h1>{{ breakingNews.title }}</h1></a>
+            </td>
+          </tr>
+          <!--Main title :  END -->
+
+          <tr>
+            <td style="padding: 0 4%;">
+              <p style="margin-bottom:5px;">{{ breakingNews.text }}</p>
+            </td>
+          </tr>
+
+          <tr style="border-bottom: 2px solid #E4E9F0">
+            <td style="padding: 0 4% 4%;">
+              <a class="link-cta" href="{{ breakingNews.link }}">{{ breakingNews.CTAtext }}</a>
+            </td>
+          </tr>
+          <!-- Full Width, Fluid Column : END -->
+          <!-- Thumbnail Right, Text Left : BEGIN -->
+          {% for  c, category in categories %}
+          <tr>
+            <td style="padding: 4%;">
+              {% if category.title %}
+              <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" dir="ltr">
+                <tr>
+                  <td valign="middle" width="80" style="padding:5px 0; text-align:left; line-height: 0;" class="stack-column-center">
+                    <img src="https://resin.io/blog/content/images/2016/07/blog.png" srcset="https://resin.io/blog/content/images/2016/07/blog.png 1x, https://resin.io//blog/content/images/2016/07/blog-2x.png 2x" alt="resin.io Logo" height="26" border="0" style="margin: auto; vertical-align: sub;">
+                    <h2 style="display:inline-block !important;">{{ category.title }}</h2>
+                  </td>
+                </tr>
+              </table>
+              {% endif %}
+              {% for a, article in category.articles %}
+                <table margin="20" border="0" width="100%" cellpadding="0" cellspacing="0" align="center" dir="rtl">
+                  <tr>
+                    <td height="10">&nbsp;</td>
+                    <td height="10">&nbsp;</td>
+                    <td height="10">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    {% if article.image %}
+                    <td valign="top" width="160" class="stack-column-center">
+                      <a href="{{ article.link }}" class="link-plain">
+                        <img src="{{ article.image }}" alt="{{ article.title }}" height="160" width="200" border="0" align="center">
+                      </a>
+                    </td>
+                    <!-- Spacer : BEGIN -->
+                    <td width="4%" height="4%" class="stack-column">&nbsp;</td>
+                    <!-- Spacer : END -->
+                    {% else %}
+                      <!-- hack to make evey table 3 cells width -->
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    {% endif %}
+
+                    <td valign="top" style="line-height: 26px; text-align: left; margin-left:0" class="stack-column-center" dir="ltr">
+                      <a href="{{ article.link }}" class="link-plain">
+                        <h3 style="margin-bottom: ;  {% if !article.image %}font-size: 15px; margin: 0;  {% endif %}">
+                          {{ article.title }}</h3></a>
+                      {% if article.text %}
+                      <p>{{ article.text }}</p>
+                      {% endif %}
+                      <a class="link-cta" style="{% if !article.image %}font-size: 15px; {% endif %}" href="{{ article.link }}">{{ article.CTAtext }}</a>
+                    </td>
+                  </tr>
+                  <tr class="border-bottom">
+                    <td height="10">&nbsp;</td>
+                    <td height="10">&nbsp;</td>
+                    <td height="10">&nbsp;</td>
+                  </tr>
+                </table>
+              {% endfor %}
+              {% if loop.first %}
+                {% include 'community.html'%}
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+          {% include 'events.html'%}
+          {% include 'social.html'%}
+        </table>
+        <!-- Main Email Body : END -->
+      </td>
+    </tr>
+    {% include 'footer.html'%}
+  </table>
+  <!-- Email wrapper : END -->
+
+</td></tr></table>
+</body>
+</html>
