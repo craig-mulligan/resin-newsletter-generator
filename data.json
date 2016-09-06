@@ -1,9 +1,9 @@
 {
 	"letterTitle": "Resin.io",
 	"breakingNews": {
-		"title": "How we updated a drone while flying - and how you can too!",
-		"link": "https://resin.io/blog/how-we-updated-a-drone-while-flying-dockercon2016/",
-		"image": "https://resin.io/blog/content/images/2016/07/Dockercon2016_drone.jpg",
+		"title": "Guest Webinar with Toradex",
+		"link": "https://resin.io/blog/guest-webinar-with-toradex/",
+		"image": "https://resin.io/blog/content/images/2016/08/103419-resin-io-toradex-joint-webinar.jpg",
 		"CTAtext": "Read"
 	},
 	"categories": [
@@ -11,41 +11,47 @@
 			"title": "Blog",
 			"articles": [
 				{
-					"title": "Prometheus + grafana + resin.io = awesome",
-					"text": "Set up custom device monitoring in less than 20 minutes",
-					"link": "https://resin.io/blog/Prometheusv2/",
-					"image": "https://github.com/resin-io-projects/resin-prometheus-server/raw/master/docs/single_device.png",
+					"title": "STICH: Inexpensive Coordinated GSM Anomaly Detection",
+					"text": "This months interesting resin.io use case",
+					"link": "https://resin.io/blog/stich-gsm-anomaly-detection/",
+					"image": "https://resin.io/blog/content/images/2016/08/SITCH-29-min.jpg",
 					"CTAtext": "Read"
 			  },{
-					"title": "Beast update #9",
-					"text": "A re-engineered Beast tile, Bill of Materials and the OctoTower",
-					"link": "https://resin.io/blog/good-better-beast-9/",
-					"image": "https://resin.io/blog/content/images/2016/08/Beast_tile_rendering.jpg",
+					"title": "Continuous integration on your devices",
+					"text": "One from our archives - Deploy to resin from GitHub using Travis CI",
+					"link": "https://resin.io/blog/travis-ci/",
+					"image": "https://ucarecdn.com/167214a7-97d3-4094-aa23-138caacecd25/-/crop/948x670/0,0/-/preview/",
+					"CTAtext": "Read"
+				}
+			]
+		},
+		{
+			"title": "Docs",
+			"articles": [
+				{
+					"title": "New 3rd party integration guide",
+					"text": "How to integrate resin.io with great services like AWS",
+					"link": "http://docs.resin.io/integrations/aws/",
 					"CTAtext": "Read"
 				},{
-					"title": "New 3rd party integration guide",
-					"text": "How to integrate resin.io with great services like Artik Cloud",
-					"link": "http://docs.resin.io/integrations/artik/",
-					"image": "https://resin.io/blog/content/images/2016/08/large.png",
+					"title": "Container Runtime",
+					"text": "Expanded info on how your application container behaves on a resin.io device, complete with useful tips&tricks. Check it out",
+					"link": "http://docs.resin.io/runtime/runtime/",
 					"CTAtext": "Read"
-			  },{
-					"title": "AT&T Shape Review",
-					"link": "https://resin.io/blog/att-shape-ericsson-demos/",
-					"CTAtext": "Read"
-			  }
+				}
 			]
 		},
 		{
 			"title": "Projects",
 			"articles": [
 				{
-					"title": "Resin Home Theatre with Kodi",
-					"link": "https://github.com/resin-io-playground/resin-kodi",
+					"title": "Resin.io Wifi strength meter",
+					"link": "https://github.com/resin-io-playground/resin-rpi-wifiquality",
 					"CTAtext": "Read"
 				},
 				{
-					"title": "Node RED (TTN-enabled) for resin.io",
-					"link": "https://github.com/thesolarnomad/resin-node-red-ttn",
+					"title": "Running Wolfram Mathematica on Raspberry Pi on resin.io",
+					"link": "https://github.com/resin-io-playground/resin-rpi-wolfram",
 					"CTAtext": "Read"
 				}
 			]
@@ -54,10 +60,28 @@
 
 	"events": [
 		{
-			"title": "Toradex Webinar: Resin.io’s robust solution for embedded software deployment",
-			"date": "August 24, 2016",
-			"location": "Internet",
-			"link": "https://www.toradex.com/webinars/resin-io-robust-solution-for-embedded-software-deployment"
+			"title": "Thing Monk",
+			"date": "September 12-14, 2016",
+			"location": "London",
+			"link": "http://thingmonk.com/"
+		},
+		{
+			"title": "Hardware Pioneers",
+			"date": "September 14, 2016",
+			"location": "London",
+			"link": "http://www.hardwarepioneers.com/"
+		},
+		{
+			"title": "DevelopEX",
+			"date": "September 20, 2016",
+			"location": "Tel Aviv",
+			"link": "https://makerfaireseattle.com/"
+		},
+		{
+			"title": "Makerfaire Athens",
+			"date": "October 1, 2016",
+			"location": "Athens",
+			"link": "http://makerfaireathens.com/en/"
 		}
 	]
 }
