@@ -1,0 +1,208 @@
+<style type="text/css">
+
+  /* What it does: Remove spaces around the email design added by some email clients. */
+  /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100% !important;
+    width: 100% !important;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 400; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust:none;
+    -ms-text-size-adjust:none;
+    line-height: 26px;
+    color: #2f2f33;
+    background: #E4E9F0;
+  }
+
+  h1 {
+    font-size: 35px;
+    line-height: 38px;
+  }
+
+  h2 {
+    font-size: 27px;
+  }
+
+  h3 {
+    font-size: 21px;
+    line-height: 24px;
+  }
+
+  /* What it does: Stops email clients resizing small text. */
+  * {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* What it does: Forces Outlook.com to display emails full width. */
+  .ExternalClass {
+    width: 100%;
+  }
+
+  /* What it does: Stops Outlook from adding extra spacing to tables. */
+  table,
+  td {
+    mso-table-lspace: 0pt;
+    mso-table-rspace: 0pt;
+  }
+
+  /* What it does: Fixes webkit padding issue. */
+  table {
+    border-spacing:0 !important;
+  }
+
+  /* What it does: Fixes Outlook.com line height. */
+  .ExternalClass,
+  .ExternalClass * {
+    line-height: 100%;
+  }
+
+  /* What it does: Fix for Yahoo mail table alignment bug. */
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+
+  /* What it does: Uses a better rendering method when resizing images in IE. */
+  img {
+    -ms-interpolation-mode:bicubic;
+  }
+
+  /* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+  .yshortcuts a {
+    border-bottom: none !important;
+  }
+
+  /* What it does: Overrides blue, underlined link auto-detected by iOS Mail. */
+  /* Create a class for every link style needed; this template needs only one for the link in the footer. */
+  .mobile-link--footer a {
+    color: #28affa !important;
+  }
+
+  a {
+    color: #77b3e3;
+  }
+
+  .link-plain {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .link-cta {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .link-btn {
+    padding: 15px 20px;
+    color: #fff;
+    background: #28affa;
+    margin-right: 5px;
+  }
+
+  table.button a {
+    color: #fff;
+  }
+
+  /* What it does: Overrides styles added images. */
+  img {
+    border:0 !important;
+    outline:none !important;
+    text-decoration:none !important;
+  }
+
+  .community, .social {
+    border-color: #E4E9F0;
+    border-width: 3px;
+  }
+
+  .email-container {
+    width:600px;
+    margin: auto;
+  }
+
+  .footer {
+    background: #2e2e30;
+    color: #fff !important;
+  }
+
+  .border-bottom {
+    border-bottom: 1px solid #E4E9F0;
+  }
+
+  .spacer-vertical {
+    height: 10px;
+    line-height: 10px;
+  }
+
+  /* Media Queries */
+  @media screen and (max-device-width: 600px), screen and (max-width: 600px) {
+
+    /* What it does: Overrides email-container's desktop width and forces it into a 100% fluid width. */
+    .email-container {
+      width: 100% !important;
+    }
+
+    /* What it does: Forces images to resize to the width of their container. */
+    img[class="fluid"],
+    img[class="fluid-centered"] {
+      width: 100% !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: auto !important;
+    }
+    /* And center justify these ones. */
+    img[class="fluid-centered"] {
+      margin: auto !important;
+    }
+
+    /* What it does: Forces table cells into full-width rows. */
+    td[class="stack-column"],
+    td[class="stack-column-center"] {
+      display: block !important;
+      width: 100% !important;
+      direction: ltr !important;
+    }
+    /* And center justify these ones. */
+    td[class="stack-column-center"] {
+      text-align: center !important;
+    }
+
+    /* Data Table Styles */
+    /* What it does: Hides table headers */
+    td[class="data-table-th"] {
+      display: none !important;
+    }
+    /* What it does: Hides table headers */
+    td[class="data-table-th"] {
+      display: none !important;
+    }
+    /* What it does: Change the look and layout of the remaining td's */
+    td[class="data-table-td"],
+    td[class="data-table-td-title"] {
+      display: block !important;
+      width: 100% !important;
+      border: 0 !important;
+    }
+    /* What it does: Changes the appearance of the first td in each row */
+    td[class="data-table-td-title"] {
+      font-weight: bold;
+      color: #333333;
+      padding: 10px 0 0 0 !important;
+      border-top: 2px solid #eeeeee !important;
+    }
+    /* What it does: Changes the appearance of the other td's in each row */
+    td[class="data-table-td"] {
+      padding: 5px 0 0 0 !important
+    }
+    /* What it does: Provides a visual divider between table rows. In this case, a bit of extra space. */
+    td[class="data-table-mobile-divider"] {
+      display: block !important;
+      height: 20px;
+    }
+    /* END Data Table Styles */
+
+  }
+</style>

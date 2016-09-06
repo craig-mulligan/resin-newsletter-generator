@@ -1,47 +1,63 @@
 {
 	"letterTitle": "Resin.io",
 	"breakingNews": {
-		"title": "Funding Announcement!",
-		"link": "https://resin.io/blog/resin-io-secures-9-million-in-funding-to-accelerate-growth-of-next-generation-iot-devops-platform/",
-		"text": "Massive thank you to our investors DFJ, GE Ventures, Ericsson, and Aspect Ventures, but most importantly to you. We couldn't have gotten this far without the community's validation and input. This new round will help us meet your needs and our goals. Big things on the way!",
+		"title": "How we updated a drone while flying - and how you can too!",
+		"link": "https://resin.io/blog/how-we-updated-a-drone-while-flying-dockercon2016/",
+		"image": "https://resin.io/blog/content/images/2016/07/Dockercon2016_drone.jpg",
 		"CTAtext": "Read"
 	},
 	"categories": [
 		{
-		"title": "Blog",
-		"articles": [{
-			"title": "No hardware? Use VirtualBox to simulate a device for resin.io!",
-			"link": "https://resin.io/blog/no-hardware-use-virtualbox/",
-			"image": "https://resin.io/blog/content/images/2016/07/Virtualbox-boot-screen.png",
-			"CTAtext": "Learn More"
-			}, {
-				"title": "How We Fixed the Raspberry Pi GPU for Containers",
-				"link": "https://resin.io/blog/raspberry-pi-gpu-for-containers/",
-				"CTAtext": "Read"
-		 },{
-			 "title": "Monitoring linux stats with Prometheus.io",
-			 "link": "https://resin.io/blog/monitoring-linux-stats-with-prometheus-io/",
-			 "CTAtext": "Read"
-		},{
-			"title": "Beaglebone Green Wireless and resin.io getting started",
-			"link": "http://www.seeed.cc/project_detail.html?id=1671",
-			"CTAtext": "Read"
-			}]
+			"title": "Blog",
+			"articles": [
+				{
+					"title": "Prometheus + grafana + resin.io = awesome",
+					"text": "Set up custom device monitoring in less than 20 minutes",
+					"link": "https://resin.io/blog/Prometheusv2/",
+					"image": "https://github.com/resin-io-projects/resin-prometheus-server/raw/master/docs/single_device.png",
+					"CTAtext": "Read"
+			  },{
+					"title": "Beast update #9",
+					"text": "A re-engineered Beast tile, Bill of Materials and the OctoTower",
+					"link": "https://resin.io/blog/good-better-beast-9/",
+					"image": "https://resin.io/blog/content/images/2016/08/Beast_tile_rendering.jpg",
+					"CTAtext": "Read"
+				},{
+					"title": "New 3rd party integration guide",
+					"text": "How to integrate resin.io with great services like Artik Cloud",
+					"link": "http://docs.resin.io/integrations/artik/",
+					"image": "https://resin.io/blog/content/images/2016/08/large.png",
+					"CTAtext": "Read"
+			  },{
+					"title": "AT&T Shape Review",
+					"link": "https://resin.io/blog/att-shape-ericsson-demos/",
+					"CTAtext": "Read"
+			  }
+			]
+		},
+		{
+			"title": "Projects",
+			"articles": [
+				{
+					"title": "Resin Home Theatre with Kodi",
+					"link": "https://github.com/resin-io-playground/resin-kodi",
+					"CTAtext": "Read"
+				},
+				{
+					"title": "Node RED (TTN-enabled) for resin.io",
+					"link": "https://github.com/thesolarnomad/resin-node-red-ttn",
+					"CTAtext": "Read"
+				}
+			]
 		}
 	],
 
 	"events": [
 		{
-			"title": "First Community meetup",
-			"date": "Past",
-			"location": "30MHZ | Amsterdam, USA",
-			"link": "https://www.30mhz.com/events/resioniomeetup"
-		},
-		{
-			"title": "AT&T Shape",
-			"date": "July 15–16 2016",
-			"location": "AT&T Park | San Francisco, USA",
-			"link": "https://shape.att.com/"
+			"title": "Toradex Webinar: Resin.io’s robust solution for embedded software deployment",
+			"date": "August 24, 2016",
+			"location": "Internet",
+			"link": "https://www.toradex.com/webinars/resin-io-robust-solution-for-embedded-software-deployment"
 		}
 	]
 }
